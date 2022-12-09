@@ -57,6 +57,12 @@ return require('packer').startup(function()
     's1n7ax/nvim-search-and-replace',
     config = function() require'nvim-search-and-replace'.setup() end,
   }
+  use {
+    'notjedi/nvim-rooter.lua',
+    config = function() require'nvim-rooter'.setup() end
+  }
+  use 'preservim/nerdcommenter'
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- You add plugins here  
 end)

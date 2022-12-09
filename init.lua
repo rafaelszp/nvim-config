@@ -20,10 +20,17 @@ require'nvim-treesitter.configs'.setup {
   },
   indent = {
     enable = true
-  }
+  },
+  update_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = true
+  },
+
 }
 
 require('wilder-config')
+require'nvim-rooter'.setup()
 
 --Should run:
 --COQdeps 

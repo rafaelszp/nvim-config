@@ -38,9 +38,25 @@ return require('packer').startup(function()
 	}
 
   use 'fedepujol/move.nvim'
---  use {'mg979/vim-visual-multi', 'branch': 'master'}
   use {'mg979/vim-visual-multi', branch = 'master'}
 
+  use {'ms-jpq/coq_nvim', branch = 'coq'}
+  use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+  use {'ms-jpq/coq.thirdparty', branch = '3p'}
+
+  use {
+    'gelguy/wilder.nvim',
+    config = function()
+      -- config goes here
+    end,
+  }
+  
+  use 'sheerun/vim-polyglot'
+
+  use {
+    's1n7ax/nvim-search-and-replace',
+    config = function() require'nvim-search-and-replace'.setup() end,
+  }
 
   -- You add plugins here  
 end)

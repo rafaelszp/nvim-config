@@ -1,5 +1,6 @@
 -- Packer installation required: https://github.com/wbthomason/packer.nvim
 -- Install script: git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+require('plugins')
 require('basics')
 require('coc-config')
 require('colors')
@@ -22,4 +23,9 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
-require('plugins')
+require('wilder-config')
+
+--Should run:
+--COQdeps 
+--then
+--:COQnow --shut-up

@@ -38,6 +38,9 @@ return require('packer').startup(function()
 	}
 
   use 'fedepujol/move.nvim'
+--  use {'mg979/vim-visual-multi', 'branch': 'master'}
+  use {'mg979/vim-visual-multi', branch = 'master'}
+
 
   -- You add plugins here  
 end)

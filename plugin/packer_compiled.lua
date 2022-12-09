@@ -161,6 +161,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rafael/.local/share/nvim/site/pack/packer/start/vim-synthwave84",
     url = "https://github.com/artanikin/vim-synthwave84"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/rafael/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   }
 }
 

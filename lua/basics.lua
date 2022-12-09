@@ -55,6 +55,13 @@ vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
 vim.keymap.set('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
 vim.keymap.set('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
 
+--hop
+map('n','<space>jj',':HopChar2<CR>',opts)
+map('n','<space>jw',':HopWord<CR>',opts)
+
+
+map('n','<space>bY','gg"+yG<CR>``',opts) -- copy entire buffer to clipboard
+
 -- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 
 -- vim.g["netrw_banner"] = 0

@@ -56,6 +56,7 @@ vim.keymap.set('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
 vim.keymap.set('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
 
 --hop
+require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
 map('n','<space>jj',':HopChar2<CR>',opts)
 map('n','<space>jw',':HopWord<CR>',opts)
 

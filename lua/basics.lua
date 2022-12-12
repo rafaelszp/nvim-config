@@ -83,3 +83,9 @@ vim.cmd([[
   endfunction
 ]])
 
+-- ale
+vim.cmd([[
+  packloadall
+  silent! helptags ALL
+  let g:ale_disable_lsp = 1
+]])

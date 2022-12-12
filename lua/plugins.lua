@@ -51,7 +51,8 @@ return require('packer').startup(function()
     end,
   }
   
-  use 'sheerun/vim-polyglot'
+  --use 'sheerun/vim-polyglot'
+  use 'dense-analysis/ale' --trying to use ale instead of polyglot(too much slow)
 
   use {
     's1n7ax/nvim-search-and-replace',

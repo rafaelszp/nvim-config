@@ -60,8 +60,14 @@ require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
 map('n','<space>jj',':HopChar2<CR>',opts)
 map('n','<space>jw',':HopWord<CR>',opts)
 
+-- copy entire buffer to clipboard
+map('n','<space>bY','gg"+yG<CR>``',opts) 
+--map('n','gf', ':vert winc f<cr>',opts)
+--copy file path to clipboard
+map('n','yf', ":let @+=expand('%:p')<CR>",opts) 
+-- copies pwd to clipboard: command yd
+map('n','yd', ":let @+=expand('%:p:h')<CR>",opts)
 
-map('n','<space>bY','gg"+yG<CR>``',opts) -- copy entire buffer to clipboard
 
 -- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 

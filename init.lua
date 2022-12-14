@@ -7,6 +7,7 @@ require('colors')
 require('lualine-config')
 require('barbar-config')
 require('telescope-config')
+require('indent-blankline-config')
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",

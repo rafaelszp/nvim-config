@@ -68,6 +68,8 @@ map('n','yf', ":let @+=expand('%:p')<CR>",opts)
 -- copies pwd to clipboard: command yd
 map('n','yd', ":let @+=expand('%:p:h')<CR>",opts)
 
+map('n','<leader>a', ":Ack!<space>",opts)
+
 
 -- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 
@@ -95,4 +97,14 @@ vim.cmd([[
   packloadall
   silent! helptags ALL
   let g:ale_disable_lsp = 1
+  set guicursor+=a:-blinkwait175-blinkoff150-blinkon175
+
+  let g:ale_fixers = {
+  \   'javascript': ['prettier'],
+  \   'css': ['prettier'],
+  \}
+
+  let g:ale_linters_explicit = 1
+
+
 ]])

@@ -5,7 +5,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'artanikin/vim-synthwave84'
-  use 'nvim-treesitter/nvim-treesitter' 
+  use 'nvim-treesitter/nvim-treesitter'
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'lukas-reineke/indent-blankline.nvim'
@@ -50,7 +50,7 @@ return require('packer').startup(function()
       -- config goes here
     end,
   }
-  
+
   --use 'sheerun/vim-polyglot'
   use 'dense-analysis/ale' --trying to use ale instead of polyglot(too much slow)
 
@@ -65,6 +65,13 @@ return require('packer').startup(function()
   use 'preservim/nerdcommenter'
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
-  -- You add plugins here  
-end)
+  use {
+        'prettier/vim-prettier',
+        run = 'yarn install',
+--        ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
+  }
+  use 'mileszs/ack.vim'
 
+
+  -- You add plugins here
+end)

@@ -71,6 +71,12 @@ map('n','yd', ":let @+=expand('%:p:h')<CR>",opts)
 map('n','<leader>a', ":Ack!<space>",opts)
 
 
+map('n','<leader>b','0',opts)
+map('v','<leader>b','0',vopts)
+map('n','<leader>e','$',opts)
+map('v','<leader>e','$',vopts)
+
+
 -- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 
 -- vim.g["netrw_banner"] = 0

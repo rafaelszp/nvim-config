@@ -71,6 +71,7 @@ return require('packer').startup(function()
 --        ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
   }
   use 'mileszs/ack.vim'
+  use 'folke/tokyonight.nvim'
 
 
   -- You add plugins here

@@ -9,4 +9,5 @@ This is my personal nvim configuration. It's based on [albingroen/quick.nvim](ht
 ```
 :CocInstall coc-json
 :CocInstall coc-json
+:CocInstall coc-prettier
 ```

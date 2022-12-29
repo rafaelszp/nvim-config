@@ -12,6 +12,7 @@ vim.api.nvim_set_keymap("i", "<CR>", "pumvisible() ? coc#_select_confirm() : '<C
 vim.api.nvim_set_keymap("n", "gy", "<Plug>(coc-type-definition)", {silent = true})
 vim.api.nvim_set_keymap("n", "gi", "<Plug>(coc-implementation)", {silent = true})
 vim.api.nvim_set_keymap("n", "gr", "<Plug>(coc-references)", {silent = true})
+vim.api.nvim_set_keymap("n", "gpp", ":CocCommand java.projectConfiguration.update<CR>", {silent=true})
 
 vim.o.hidden = true
 vim.o.backup = false

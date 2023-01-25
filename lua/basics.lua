@@ -76,6 +76,9 @@ map('v','<leader>b','0',vopts)
 map('n','<leader>e','$',opts)
 map('v','<leader>e','$',vopts)
 
+-- Toggling word wrap
+map('n','gw',':set wrap!<CR>',opts)
+
 
 -- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 

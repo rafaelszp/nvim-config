@@ -72,6 +72,10 @@ return require('packer').startup(function()
   use 'mileszs/ack.vim'
   use 'folke/tokyonight.nvim'
 
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- You add plugins here
 end)

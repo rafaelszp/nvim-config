@@ -20,9 +20,9 @@ opts = {silent = true}
 --vmap <leader>f  <Plug>(coc-format-selected)
 --nmap <leader>f  <Plug>(coc-format-selected)
 
-keyset("v","<leader>f","<Plug>(coc-format-selected)",opts)
-keyset("n","<leader>f","<Plug>(coc-format-selected)",opts)
-keyset("n","<leader>fa",":CocCommand prettier.formatFile<CR>",opts)
+--keyset("v","<leader>f","<Plug>(coc-format-selected)",opts)
+--keyset("n","<leader>f","<Plug>(coc-format-selected)",opts)
+--keyset("n","<leader>fa",":CocCommand prettier.formatFile<CR>",opts)
 
 vim.o.hidden = true
 vim.o.backup = false

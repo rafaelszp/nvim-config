@@ -32,6 +32,7 @@ require'nvim-treesitter.configs'.setup {
 
 require('wilder-config')
 require'nvim-rooter'.setup()
+require('formatter-config')
 
 --Should run:
 --COQdeps 
